@@ -1,9 +1,10 @@
 node_modules/
+jest.results.json
+lib/
 
 # Editors
-.vscode/
-.idea/
-*.iml
+.vscode
+.DS_Store
 
 # Logs
 logs
