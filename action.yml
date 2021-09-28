@@ -1,4 +1,4 @@
-name: 'Jest Annotations & Coverage with Summary'
+name: "Jest Annotations & Coverage with Summary"
 description: "Jest action adding checks and annotations to your pull requests and comment them with code coverage results."
 branding:
   icon: "check"
@@ -29,5 +29,5 @@ inputs:
     required: true
 
 runs:
-  using: 'node12'
-  main: 'dist/index.js'
+  using: "node12"
+  main: "dist/index.js"
