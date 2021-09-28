@@ -1,10 +1,32 @@
 name: 'Jest Annotations & Coverage with Summary'
 description: 'Wait a designated number of milliseconds'
+branding:
+  icon: "check"
+  color: "blue"
 inputs:
-  milliseconds:  # id of input
-    description: 'number of milliseconds to wait'
+  test-command:
+    description: "The test command to run"
+    required: false
+    default: "npm test"
+  working-directory:
+    description: "Subdirectory to run tests in"
+    required: false
+    default: ""
+  coverage-comment:
+    description: "Comment PRs with code coverage"
+    required: false
+    default: "true"
+  calc-summary:
+    description: :"Calculate coverage summary, set to only will not comment file coverage"
+    required: false
+    default: "false"
+  changes-only:
+    description: "Only run tests on changed files (over base branch)"
+    required: false
+    default: "false"
+  check-name:
+    description: "Status check name"
     required: true
-    default: '1000'
 outputs:
   time: # output will be available to future steps
     description: 'The message to output'
