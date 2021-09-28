@@ -1,33 +1,13 @@
-name: "Jest Annotations & Coverage with Summary"
-description: "Jest action adding checks and annotations to your pull requests and comment them with code coverage results."
-branding:
-  icon: "check"
-  color: "blue"
+name: 'Wait'
+description: 'Wait a designated number of milliseconds'
 inputs:
-  test-command:
-    description: "The test command to run"
-    required: false
-    default: "npm test"
-  working-directory:
-    description: "Subdirectory to run tests in"
-    required: false
-    default: ""
-  coverage-comment:
-    description: "Comment PRs with code coverage"
-    required: false
-    default: "true"
-  calc-summary:
-    description: :"Calculate coverage summary, set to only will not comment file coverage"
-    required: false
-    default: "false"
-  changes-only:
-    description: "Only run tests on changed files (over base branch)"
-    required: false
-    default: "false"
-  check-name:
-    description: "Status check name"
+  milliseconds:  # id of input
+    description: 'number of milliseconds to wait'
     required: true
-
+    default: '1000'
+outputs:
+  time: # output will be available to future steps
+    description: 'The message to output'
 runs:
-  using: "node12"
-  main: "dist/index.js"
+  using: 'node12'
+  main: 'dist/index.js'
