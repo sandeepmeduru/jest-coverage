@@ -1,6 +1,6 @@
 name: "Jest Annotations & Coverages with Summary"
 author: "sandeepmeduru"
-description: "Jest action adding checks and annotations to your pull requests and comment them with code coverage results."
+description: "Jest action adding checks"
 branding:
   icon: "check"
   color: "blue"
