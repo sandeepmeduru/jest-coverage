@@ -18,7 +18,7 @@ inputs:
     required: false
     default: "true"
   calc-summary:
-    description: "Calculate coverage summary, set to only will not comment file coverage"
+    description: :"Calculate coverage summary, set to only will not comment file coverage"
     required: false
     default: "false"
   changes-only:
